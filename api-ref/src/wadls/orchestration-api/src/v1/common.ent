@@ -280,3 +280,27 @@
    </para>
 </wadl:doc>
 </param> '>
+<!ENTITY commonFaults '
+<response status="400" xmlns="http://wadl.dev.java.net/2009/02">
+   <representation mediaType="application/xml" element="heat:badRequest"/>
+   <representation mediaType="application/json"/>
+</response>
+<response status="401" xmlns="http://wadl.dev.java.net/2009/02">
+   <representation mediaType="application/xml" element="heat:unauthorized"/>
+   <representation mediaType="application/json"/>
+</response> '>
+<!ENTITY notFound '
+<response status="404" xmlns="http://wadl.dev.java.net/2009/02">
+   <representation mediaType="application/xml" element="heat:notFound"/>
+   <representation mediaType="application/json"/>
+</response> '>
+<!ENTITY conflict '
+<response status="409" xmlns="http://wadl.dev.java.net/2009/02">
+   <representation mediaType="application/xml" element="heat:conflict"/>
+   <representation mediaType="application/json"/>
+</response> '>
+<!ENTITY intServerErr '
+<response status="500" xmlns="http://wadl.dev.java.net/2009/02">
+   <representation mediaType="application/xml" element="heat:internalServerError"/>
+   <representation mediaType="application/json"/>
+</response> '>
